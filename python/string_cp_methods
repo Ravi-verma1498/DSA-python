@@ -1,0 +1,52 @@
+def main():
+    s = " hello, world! "
+
+    # Strip leading and trailing whitespace
+    stripped = s.strip()
+
+    # Split the string into words
+    words = stripped.split(',')
+
+    # Join the words with a hyphen
+    joined = '-'.join(words)
+
+    # Replace 'world' with 'python'
+    replaced = joined.replace('world', 'python')
+
+    # Find the position of 'hello'
+    pos = replaced.find('hello')
+
+    # Count the occurrences of 'o'
+    count_o = replaced.count('o')
+
+    # Check if the string starts with 'hello'
+    starts_with_hello = replaced.startswith('hello')
+
+    # Convert to uppercase
+    upper = replaced.upper()
+
+    # Check if all characters are alphabetic
+    is_alpha = replaced.isalpha()
+
+    # Capitalize the first letter
+    capitalized = replaced.capitalize()
+
+    print(f"Original: {s}")
+    print(f"Stripped: {stripped}")
+    print(f"Words: {words}")
+    print(f"Joined: {joined}")
+    print(f"Replaced: {replaced}")
+    print(f"Position of 'hello': {pos}")
+    print(f"Count of 'o': {count_o}")
+    print(f"Starts with 'hello': {starts_with_hello}")
+    print(f"Uppercase: {upper}")
+    print(f"Is alphabetic: {is_alpha}")
+    print(f"Capitalized: {capitalized}")
+
+
+
+
+
+if __name__ == "__main__":
+    main()
+
